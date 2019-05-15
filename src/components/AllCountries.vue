@@ -27,6 +27,7 @@ export default {
   },
   created(){
     this.$store.dispatch('fetchCountries');
+    
   },
   computed:{
     searchedCountries(){

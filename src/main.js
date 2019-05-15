@@ -7,10 +7,12 @@ import store from './store/store';
 import * as VueGoogleMaps from "vue2-google-maps";
 import BootstrapVue from 'bootstrap-vue';
 
+const googleApiKey = process.env.GOOGLE_API_KEY;
+
 Vue.config.productionTip = false
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "GOOGLE_API_KEY",
+    key: googleApiKey,
   }
 });
 Vue.use(BootstrapVue);
