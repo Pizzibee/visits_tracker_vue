@@ -1,13 +1,11 @@
 # Visits Tracker
 
-> A Vue.js project
-
 # Features : 
   - Displays a list of countries with an "add" button
   - "Add" button adds the country to the country you have visited
   - Display markers of countries you have visited on a google map
   
-Before running the project make sure to add your Google API Key in the ./src/main.js file
+Before running the project make sure to add your Google API Key in the ./config/dev.env.js file as GOOGLE_API_KEY : '"YOUR_KEY"'
 
 # Build Setup
 
