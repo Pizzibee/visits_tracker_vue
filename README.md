@@ -1,14 +1,13 @@
 # Visits Tracker
 
-> A Vue.js project
-Features : 
+# Features : 
   - Displays a list of countries with an "add" button
   - "Add" button adds the country to the country you have visited
   - Display markers of countries you have visited on a google map
   
-Before running the project make sure to add your Google API Key in the ./src/main.js file
+Before running the project make sure to add your Google API Key in the ./config/dev.env.js file as GOOGLE_API_KEY : '"YOUR_KEY"'
 
-## Build Setup
+# Build Setup
 
 ``` bash
 # install dependencies
@@ -25,3 +24,7 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+# App screenshot : 
+
+![alt text](https://github.com/Pizzibee/visits_tracker_vue/blob/master/docs/screen.png)
