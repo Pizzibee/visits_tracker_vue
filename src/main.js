@@ -10,7 +10,7 @@ import BootstrapVue from 'bootstrap-vue';
 Vue.config.productionTip = false
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "AIzaSyDm52jwvI3-w3fJ5N24zKwGeovh4Gf_Qh4",
+    key: "GOOGLE_API_KEY",
   }
 });
 Vue.use(BootstrapVue);
