@@ -7,10 +7,10 @@
         </b-col>
         <b-col cols="9">
           <b-row>
-            <b-col cols="9">
+            <b-col cols="8">
               <h5 class="card-title mt-1">{{country.name}}</h5>
             </b-col>
-            <b-col>
+            <b-col v-if="!visits.includes(country)">
               <button v-on:click="addVisit(country)">
                 <img src="../assets/add.png">
               </button>
@@ -23,6 +23,8 @@
 </template>
 
 <script>
+
+import { mapGetters } from 'vuex';
 export default {
   props:{
     country: Object,
@@ -31,7 +33,12 @@ export default {
     addVisit(country){
       this.$store.dispatch('addVisit', country);
     }
-  }
+  },
+  computed:{
+    ...mapGetters([
+      'visits',
+    ])
+  },
 }
 </script>
 
