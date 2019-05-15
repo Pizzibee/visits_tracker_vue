@@ -5,7 +5,17 @@
   - "Add" button adds the country to the country you have visited
   - Display markers of countries you have visited on a google map
   
-Before running the project make sure to add your Google API Key in the ./config/dev.env.js file as GOOGLE_API_KEY : '"YOUR_KEY"'
+Before running the project make sure to add your Google API Key in the ./config/dev.env.js file as : 
+```
+'use strict'
+const merge = require('webpack-merge')
+const prodEnv = require('./prod.env')
+
+module.exports = merge(prodEnv, {
+  NODE_ENV: '"development"',
+  GOOGLE_API_KEY : "'YOUR_KEY'",
+})
+```
 
 # Build Setup
 
