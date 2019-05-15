@@ -9,7 +9,6 @@ Before running the project make sure to add your Google API Key in the ./config/
 ```
 'use strict'
 const merge = require('webpack-merge')
-const prodEnv = require('./prod.env')
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
