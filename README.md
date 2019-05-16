@@ -3,7 +3,7 @@
 # Features : 
   - Displays a list of countries with an "add" button
   - "Add" button adds the country to the country you have visited
-  - Display markers of countries you have visited on a google map
+  - Displays markers of countries you have visited on a google map
   
 Before running the project make sure to add your Google API Key in the ./config/dev.env.js file as : 
 ```
