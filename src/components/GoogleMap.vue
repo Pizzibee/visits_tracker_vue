@@ -16,16 +16,19 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
   name: "GoogleMap",
-  data() {
-    return {
-      // default to Italy
-      center: { lat: 42.83333333, lng: 12.83333333 },
-
-    };
-  },
   computed: {
+    center(){
+      let countryLoc = this.$store.getters.geolocation;
+      if (countryLoc){
+        return {lat: 42.83333333, lng: countryLoc.latlng[1]};
+      }else{
+        // default to Europe
+        return { lat: 42.83333333, lng: 12.83333333 };
+      }
+    },
     markers(){
       return this.$store.getters.visitsCoord;
     }

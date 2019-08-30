@@ -21,10 +21,14 @@ import AllCountries from "./AllCountries";
 
 export default {
   name: 'App',
+  beforeCreate(){
+    this.$store.dispatch('fetchCountries');
+    this.$store.dispatch('fetchLocation');
+  },
   components: {
+    AllCountries,
     GoogleMap,
-    VisitedCountries,
-    AllCountries
+    VisitedCountries
   },
 }
 </script>

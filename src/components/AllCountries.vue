@@ -2,6 +2,7 @@
   <div>
     <h1>All Countries</h1>
     <input type="text" placeholder="Search..." v-model="search" class="width-100">
+    
     <div class="scrollable-full">
       <div
         v-bind:key="country.alpha2Code"
@@ -24,10 +25,6 @@ export default {
     return {
       search:'',
     }
-  },
-  created(){
-    this.$store.dispatch('fetchCountries');
-    
   },
   computed:{
     searchedCountries(){
